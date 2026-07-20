@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-label="AFSCME Local 6368 MDOT Supervisors">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#007a46"/><stop offset="1" stop-color="#003d25"/></linearGradient></defs>
+<circle cx="150" cy="150" r="140" fill="url(#g)"/>
+<circle cx="150" cy="150" r="116" fill="none" stroke="#fff" stroke-width="7" opacity=".95"/>
+<text x="150" y="88" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="800" fill="#fff">AFSCME</text>
+<text x="150" y="174" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="72" font-weight="900" fill="#fff">6368</text>
+<text x="150" y="216" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="800" fill="#fff">MDOT SUPERVISORS</text>
+</svg>
