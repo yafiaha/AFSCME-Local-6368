@@ -150,6 +150,23 @@
           <h2 id="newsletter-title">Local 6368 Newsletter</h2>
           <p>Stay connected with Local news, member updates, meeting reminders, important announcements, and union information.</p>
         </div>
+
+        <div class="newsletter-feature">
+          <h4>Assistant Superintendent Shift Pick — August 6, 2026</h4>
+          <p>
+            MDOT MTA Bus Transportation will hold the Assistant Superintendent Shift Pick on Thursday, August 6, 2026 at 9:00 AM at 1515 Washington Boulevard, Bus Transportation Suite Conference Room. Picks are conducted in seniority order; members may attend in person or participate by phone. See the notice below for the full schedule, and the weekly shift chart for shift times by location.
+          </p>
+          <div class="flyer-gallery">
+            <img src="assets/shift-pick-notice-aug6-2026.png" alt="MDOT MTA Bus Transportation Assistant Superintendent Shift Pick notice for Thursday, August 6, 2026, 9:00 AM, listing pick times, ranks, and employee names" class="flyer-image" onclick="openLightbox(this.src, this.alt)">
+            <img src="assets/weekly-assistant-superintendent-shifts.png" alt="Weekly Assistant Superintendent Scheduled Shifts table showing shift times by day for Kirk, NW, Bush, and Eastern locations" class="flyer-image" onclick="openLightbox(this.src, this.alt)">
+          </div>
+        </div>
+
+        <div id="flyer-lightbox" class="lightbox-overlay" onclick="closeLightbox()">
+          <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+          <img id="lightbox-img" class="lightbox-content" src="" alt="">
+        </div>
+
         <div class="info-grid">
           <div class="panel card">
             <h3>Member Updates</h3>
@@ -220,5 +237,25 @@
       United in Service. Strong in Solidarity.
     </footer>
   </div>
+  <script>
+    function openLightbox(src, alt) {
+      var overlay = document.getElementById('flyer-lightbox');
+      var img = document.getElementById('lightbox-img');
+      img.src = src;
+      img.alt = alt;
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      var overlay = document.getElementById('flyer-lightbox');
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
 </body>
 </html>
